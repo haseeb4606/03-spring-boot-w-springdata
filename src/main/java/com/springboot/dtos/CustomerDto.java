@@ -4,6 +4,8 @@ public class CustomerDto {
 
 	private long id;
 
+	private Boolean active;
+
 	private String name;
 
 	private String domain;
@@ -42,10 +44,18 @@ public class CustomerDto {
 		this.url = url;
 	}
 
-	@Override
-	public String toString() {
-		return "CustomerDto [id=" + id + ", name=" + name + ", domain=" + domain + ", url=" + url + "]";
+	public Boolean getActive() {
+		return active;
 	}
 
-	
+	public void setActive(Boolean active) {
+		this.active = active;
+	}
+
+	@Override
+	public String toString() {
+		return "CustomerDto [id=" + id + ", active=" + active + ", name=" + name + ", domain=" + domain + ", url=" + url
+				+ "]";
+	}
+
 }

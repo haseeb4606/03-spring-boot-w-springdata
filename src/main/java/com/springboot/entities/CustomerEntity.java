@@ -23,6 +23,9 @@ public class CustomerEntity {
 
 	@Column(name = "url")
 	private String url;
+	
+	@Column(name  = "is_active")
+	private Boolean active;
 
 	public long getId() {
 		return id;
@@ -55,5 +58,14 @@ public class CustomerEntity {
 	public void setUrl(String url) {
 		this.url = url;
 	}
+
+	public Boolean getActive() {
+		return active;
+	}
+
+	public void setActive(Boolean active) {
+		this.active = active;
+	}
+	
 
 }
